@@ -2,22 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slide.css">
     <script src="js/main.js"></script>
-    <title>PokemonCard</title>
+    <title>PokemonCardRIA</title>
 </head>
 <body>
-    <?php include 'php/script.php';?>
+    <?php include 'php/Pokemon.php';?>
+
+    <h1 class="datos"></h1>
     <div class="container">
         <form class="form-select" method="GET">
             <label class="lbl" for="tipos"> Seleccione el tipo de Pokemon</label>
-            <select name="pokemonTipo" id="pokemonType" onchange="this.form.submit()">
+            <select name="pokemonTipo" id="pokemonType" onchange="getTipo()">
             <option value="0"> --Seleccione--</option>
         </form>
             
+
         </select>
         <div class="slide-container">
             <img id="slide_img" src="img/articuno.png" width="200" height="200" alt="pokemon">
@@ -39,6 +43,10 @@
             <input name="input_fuerza" type="text">
             <button type="submit">Mostrar</button> 
         </div> -->
+    </div>
+
+    <div class="shopping-cart">
+
     </div>
 </body>
 </html>
