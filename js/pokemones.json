@@ -1,0 +1,14 @@
+[
+    {
+        "id": 8,
+        "nombre": "Nidoqueen",
+        "fuerza": 92,
+        "velocidad": 76,
+        "tipoEvolucion": 3,
+        "tipo": [
+            "Poison",
+            "Ground"
+        ],
+        "imagen": "nidoqueen.png"
+    }
+]

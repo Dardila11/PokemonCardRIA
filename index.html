@@ -8,20 +8,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slide.css">
     <script src="js/main.js"></script>
+    <script src="js/slide.js"></script>
     <title>PokemonCardRIA</title>
 </head>
 <body>
-    <?php include 'php/Pokemon.php';?>
-
-    <h1 class="datos"></h1>
+    <h3 class="datos"></h3>
     <div class="container">
         <form class="form-select" method="GET">
             <label class="lbl" for="tipos"> Seleccione el tipo de Pokemon</label>
             <select name="pokemonTipo" id="pokemonType" onchange="getTipo()">
-            <option value="0"> --Seleccione--</option>
+            <option value="0">--Seleccione--</option>
         </form>
-            
-
         </select>
         <div class="slide-container">
             <img id="slide_img" src="img/articuno.png" width="200" height="200" alt="pokemon">

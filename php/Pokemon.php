@@ -2,15 +2,15 @@
 
 class Pokemon {
     
-    private $id = 0;
-    private $nombre = null;
-    private $fuerza = null;
-    private $velocidad = null;
-    private $tipoEvolucion = null;
-    private $tipo = null;
-    private $imagen = null;
+    public $id = 0;
+    public $nombre = null;
+    public $fuerza = null;
+    public $velocidad = null;
+    public $tipoEvolucion = null;
+    public $tipo = null;
+    public $imagen = null;
     
-    function __construct($id, $nombre, $fuerza, $velocidad, $tipoEvolucion, $tipo, $imagen){
+    public function __construct($id, $nombre, $fuerza, $velocidad, $tipoEvolucion, $tipo, $imagen){
         $this->id = $id;
         $this->nombre = $nombre;
         $this->fuerza = $fuerza;

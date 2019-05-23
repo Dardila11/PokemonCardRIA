@@ -19,6 +19,7 @@ function getTipo(){
     
     var tipo = document.getElementById("pokemonType").value;
     $(".datos").load("php/getPokemon.php?pokemonTipo=" + tipo);
+    
 }
 
 window.onload = loadTypes;

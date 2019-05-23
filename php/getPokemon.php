@@ -39,13 +39,23 @@ if(isset($_GET["pokemonTipo"])){
     }
     if(count($pokemon_array) == 0){
         echo "No hay pokemones de ese tipo: " . $typeName;
+        // Escrbir el JSON
     }else{
-        for ($i=0; $i < count($pokemon_array) ; $i++) { 
+        // Escribimos el JSON
+        $pokemon_json = json_encode($pokemon_array, JSON_PRETTY_PRINT);
+        $fp = fopen('../js/pokemones.json','w');
+        fwrite($fp,$pokemon_json);
+        fclose($fp);
+
+
+        /*for ($i=0; $i < count($pokemon_array) ; $i++) { 
             echo $pokemon_array[$i]->getNombre();
             echo "\n";
             echo $pokemon_array[$i]->getFuerza();
             echo "\n";
-        }
+        }*/
+
+
     }
 }else{
     echo "Error, el numero de Pokemon no especificado";
