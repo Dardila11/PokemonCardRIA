@@ -1,14 +1,25 @@
 [
     {
-        "id": 8,
-        "nombre": "Nidoqueen",
-        "fuerza": 92,
-        "velocidad": 76,
+        "id": 1,
+        "nombre": "Charizard",
+        "fuerza": 84,
+        "velocidad": 100,
         "tipoEvolucion": 3,
         "tipo": [
-            "Poison",
-            "Ground"
+            "Fire",
+            "Flying"
         ],
-        "imagen": "nidoqueen.png"
+        "imagen": "charizard.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Flareon",
+        "fuerza": 130,
+        "velocidad": 65,
+        "tipoEvolucion": 4,
+        "tipo": [
+            "Fire"
+        ],
+        "imagen": "flareon.png"
     }
 ]

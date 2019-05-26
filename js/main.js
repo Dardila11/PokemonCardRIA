@@ -15,10 +15,27 @@ function loadTypes(){
     }    
 }
 
+ /* Obtiene todos los pokemon del tipo enviado "tipo" y
+    guarda la informacion de los pokemon en un JSON.
+    Posteriormente, llama la funcion "cargarSlide"*/
 function getTipo(){
-    
     var tipo = document.getElementById("pokemonType").value;
     $(".datos").load("php/getPokemon.php?pokemonTipo=" + tipo);
+    cargarSlide();
+
+
+}
+/* Cargamos el archivo JSON y lo guardamos en una variable
+   local. "pData" para luego trabajar con los datos */
+function cargarSlide(){
+    jQuery.getJSON("js/pokemones.json", function(pData){
+        console.log(pData);
+        for (let i = 0; i < pData.length; i++) {
+            poke = pData[i];
+            console.log(poke);
+        }
+    });
+    
     
 }
 
